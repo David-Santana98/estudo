@@ -1,0 +1,21 @@
+.cartao-discord {
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #cacaca;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.cartao-discord img {
+    width: 100px;
+}
+
+.cartao-discord h1 {
+    color: #5865f2;
+}
+.cartao-discord p {
+    text-align: center;
+}

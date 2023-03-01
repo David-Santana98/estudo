@@ -1,0 +1,9 @@
+.discord {
+    padding: 20px;
+}
+
+.discord .itens {
+    display: flex;
+    gap: 20px;
+}
+
