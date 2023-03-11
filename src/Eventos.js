@@ -10,7 +10,7 @@ export default function Eventos() {
     alert("alterouuuu!" + e.target.value);
   }
   return (
-    <div>
+    <div className="eventos">
       <h1> Eventos </h1>
 
       <input type="text" onChange={alterar} />

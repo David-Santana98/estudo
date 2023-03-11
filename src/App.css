@@ -3,12 +3,13 @@
 }
 
 .App h1 {
-  color: greenyellow;
+  color: rgb(72, 4, 104);
+  font-size: 4rem;
 }
 
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f2d1ff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

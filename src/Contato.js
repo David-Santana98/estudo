@@ -6,6 +6,8 @@ export default function Contato() {
         <div className='contato'>
             <h1>Contato</h1>
             <p>Deixe seu contato e retornaremos para você.</p>
+             <label>Email:</label>
+            <input type="email" /><br /><br />
             <Link to='/'> Voltar para home </Link>
         </div>
     )
