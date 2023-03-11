@@ -7,7 +7,7 @@
             <h1> Calculadora de Ingressos </h1>
 
             <div>
-                Quantidade de Ingressos:
+                Quantidade de Ingressos: 
                 <input type="text" />
             </div>
             <div>
