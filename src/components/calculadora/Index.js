@@ -7,7 +7,7 @@ export default function Calculadora() {
   const [meia, setMeia] = useState(false);
   const [total, setTotal] = useState(0);
 
-  function calcular() {
+  function Calcular() {
     let tot = 0;
     if (meia === true) {
       tot = (qtd * preco) / 2;
@@ -39,7 +39,7 @@ export default function Calculadora() {
       </div>
 
       <div>
-        <button onClick={calcular}> Calcular </button>
+        <button onClick={Calcular}> Calcular </button>
         <h4>R$:{total} </h4>
       </div>
     </div>
