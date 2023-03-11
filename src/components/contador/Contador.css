@@ -1,0 +1,12 @@
+.contador {
+    margin: 10px;
+    border: 1px solid #000 ;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+}
+
+button {
+    border-radius: 20px;
+}
