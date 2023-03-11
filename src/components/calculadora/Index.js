@@ -1,27 +1,26 @@
- import './Index.css';
+import "./Index.css";
 
- export default function Calculadora() {
+export default function Calculadora() {
+  return (
+    <div className="calculadora">
+      <h1> Calculadora de Ingressos </h1>
 
-    return (
-        <div>
-            <h1> Calculadora de Ingressos </h1>
+      <div>
+        <label>Quantidade:</label>
 
-            <div>
-                Quantidade de Ingressos: 
-                <input type="text" />
-            </div>
-            <div>
-                Preço:
-                <input type="text" />
-            </div>
-            <div>
-                Meia:
-                <input type="checkbox" />
-            </div>
+        <input type="text" />
+      </div>
+      <div>
+        <label>Preço:</label>
+        <input type="text" />
+      </div>
+      <div>
+        <label>Meia</label> <input type="checkbox" />
+      </div>
 
-            <div>
-                <button> Calcular </button>
-            </div>
-        </div>
-    )
- }
+      <div>
+        <button> Calcular </button>
+      </div>
+    </div>
+  );
+}

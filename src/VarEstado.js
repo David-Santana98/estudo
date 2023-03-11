@@ -15,7 +15,7 @@ export default function VarEstado() {
     }
 
     return (
-        <div>
+        <div className='estado'>
             <h1> Variável de Estado </h1>
             
             <h3>Aluno</h3>

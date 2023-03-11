@@ -1,0 +1,18 @@
+.calculadora {
+    margin: 10px;
+}
+
+
+.calculadora label {
+    width: 100px;
+    text-align: right;
+    margin: 5px;
+    display: inline-block;
+}
+
+.calculadora button {
+    margin: 20px;
+    font-size: 1.2rem;
+    
+}
+
