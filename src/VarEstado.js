@@ -31,6 +31,9 @@ export default function VarEstado() {
                 <Contador titulo="Dias"/>
                 <Contador titulo="Férias"/>
              </div>
+              
+             <hr/>
+              
              <br/>
              <Link to='/'> Voltar para home </Link>
         </div>
