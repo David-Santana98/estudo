@@ -6,6 +6,7 @@ import Contato from "./Contato";
 import Discord from "./discord";
 import Eventos from "./Eventos";
 import VarEstado from "./VarEstado";
+import Renderizacao from "./Renderizacao"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -19,6 +20,7 @@ root.render(
         <Route path="/discord" element={<Discord />} />
         <Route path="/eventos" element={<Eventos />} />
         <Route path="/varestado" element={<VarEstado />} />
+        <Route path="/renderizacao" element={<Renderizacao />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
