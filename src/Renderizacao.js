@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 export default function Renderizacao() {
   const [num, setNum] = useState(0);
@@ -22,7 +24,7 @@ export default function Renderizacao() {
         {exibir === true &&
         <div>
             <h2>Você ganhou um carro!!!</h2> 
-            <h2>Uma Ferrari!!</h2>
+            <h3>Uma Ferrari!!</h3>
         </div>
         }
 
@@ -31,6 +33,9 @@ export default function Renderizacao() {
       <h2>{num}</h2>
 
       <button onClick={Incr}>Incr.</button>
+      <br/>
+      <br/>
+      <Link to='/'> Voltar para home </Link>
     </div>
   );
 }

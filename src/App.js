@@ -11,6 +11,7 @@ function App() {
         <Link to='/eventos'>Ir para eventos</Link>       
         <Link to='/discord'>Ir para CartãoDiscord</Link>       
         <Link to='/varestado'>Ir para VarEstado</Link>       
+        <Link to='/renderizacao'>Ir para Renderizacao</Link>       
       </header>
     </div>
   );

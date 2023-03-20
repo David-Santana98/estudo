@@ -1,11 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Index.css";
 
 export default function Calculadora() {
-  const [qtd, setQtd] = useState(0);
-  const [preco, setPreco] = useState(0);
+  const [qtd, setQtd] = useState(1);
+  const [preco, setPreco] = useState(10);
   const [meia, setMeia] = useState(false);
-  const [total, setTotal] = useState(0);
+  const [total, setTotal] = useState(10);
+
+  useEffect(() => {
+    Calcular();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [qtd, preco, meia]);
 
   function Calcular() {
     let tot = 0;
@@ -24,16 +29,25 @@ export default function Calculadora() {
       <div>
         <label>Quantidade:</label>
 
-        <input type="text" onChange={(e) => setQtd(Number(e.target.value))} />
+        <input
+          type="text"
+          value={qtd}
+          onChange={(e) => setQtd(Number(e.target.value))}
+        />
       </div>
       <div>
         <label>Preço:</label>
-        <input type="text" onChange={(e) => setPreco(Number(e.target.value))} />
+        <input
+          type="text"
+          value={preco}
+          onChange={(e) => setPreco(Number(e.target.value))}
+        />
       </div>
       <div>
         <label>Meia</label>{" "}
         <input
           type="checkbox"
+          checked={meia}
           onChange={(e) => setMeia(e.target.checked)}
         />
       </div>
