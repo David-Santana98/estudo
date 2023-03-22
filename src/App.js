@@ -13,6 +13,7 @@ function App() {
         <Link to='/varestado'>Ir para VarEstado</Link>       
         <Link to='/renderizacao'>Ir para Renderizacao</Link>       
         <Link to='/correio'>Ir para Correio</Link>       
+        <Link to='/filme'>Ir para Filme</Link>       
       </header>
     </div>
   );

@@ -8,6 +8,7 @@ import Eventos from "./Eventos";
 import VarEstado from "./VarEstado";
 import Renderizacao from "./Renderizacao"
 import Correio from "./Correio";
+import Filme from "./Filme";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -23,6 +24,7 @@ root.render(
         <Route path="/varestado" element={<VarEstado />} />
         <Route path="/renderizacao" element={<Renderizacao />} />
         <Route path="/correio" element={<Correio />} />
+        <Route path="/filme" element={<Filme />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

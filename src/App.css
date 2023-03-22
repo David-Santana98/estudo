@@ -3,19 +3,19 @@
 }
 
 .App h1 {
-  color: rgb(72, 4, 104);
+  color: #fff6f6;
   font-size: 4rem;
 }
 
 
 .App-header {
-  background-color: #f2d1ff;
+  background-color: #6f71ff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(16px + 2vmin);
   color: white;
 }
 
