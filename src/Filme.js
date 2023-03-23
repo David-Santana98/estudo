@@ -8,14 +8,12 @@ export default function Filme() {
   const [resultado, setResultado] = useState([]);
 
   async function buscar() {
-    let r = await axios.get(
-      "http://omdbapi.com/?apikey=d43a5114&s=" + filme
-    );
+    let r = await axios.get("http://omdbapi.com/?apikey=d43a5114&s=" + filme);
     setResultado(r.data.Search);
   }
 
   return (
-    <div>
+    <div className="home">
       <h1>Filme</h1>
 
       <div>Pesquise pelo nome do filme:</div>
@@ -28,16 +26,16 @@ export default function Filme() {
         <button onClick={buscar}>Buscar</button>
       </div>
       <section className="lista">
-        {resultado.map(item => 
+        {resultado?.map((item) => (
           <div className="cartao-filme">
-              <img src={item.Poster} alt="" />
+            <img src={item.Poster} alt="" />
             <div>
               <h1>{item.Title}</h1>
               <h2>Lançado em {item.Year}</h2>
               <p>Cód. imdb: {item.imdbID}</p>
             </div>
           </div>
-        )}
+        ))}
       </section>
       <Link to="/"> Voltar para home </Link>
     </div>
