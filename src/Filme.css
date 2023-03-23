@@ -1,5 +1,5 @@
 .home {
-  background-color: rgb(174, 219, 240);
+  background-color: rgb(90, 140, 233);
   text-align: center;
   padding: 20px;
 }
@@ -9,7 +9,12 @@
   flex-wrap: wrap;
 }
 
+.cartao-filme:hover {
+    transform: scale(1.15);
+}
+
 .cartao-filme {
+  transition: 0.4s;  
   box-shadow: 0px 0px 10px 1px #aaa;
   width: 300px;
   height: 100px;
@@ -21,7 +26,7 @@
   display: flex;
   padding: 10px;
   border-radius: 4px;
-  margin: 10px;
+  margin: 20px;
 }
 .cartao-filme img {
   margin-right: 10px;
