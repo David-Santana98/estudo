@@ -1,3 +1,4 @@
+import "./Filme.css";
 import axios from "axios";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -6,7 +7,12 @@ export default function Filme() {
   const [filme, setFilme] = useState("");
   const [resultado, setResultado] = useState([]);
 
-  function buscar() {}
+  async function buscar() {
+    let r = await axios.get(
+      "http://omdbapi.com/?apikey=d43a5114&s=" + filme
+    );
+    setResultado(r.data.Search);
+  }
 
   return (
     <div>
@@ -21,9 +27,18 @@ export default function Filme() {
         />
         <button onClick={buscar}>Buscar</button>
       </div>
-      <div>
-        <h3>{resultado}</h3>
-      </div>
+      <section>
+        {resultado.map((item) => (
+          <div className="cartao-filme">
+            <div>
+              <img src={item.Poster} alt="" />
+              <h1>{item.Title}</h1>
+              <h2>Lançado em {item.Year}</h2>
+              <p>Cód. imdb: {item.ImdbID}</p>
+            </div>
+          </div>
+        ))}
+      </section>
       <Link to="/"> Voltar para home </Link>
     </div>
   );
