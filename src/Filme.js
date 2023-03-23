@@ -27,17 +27,17 @@ export default function Filme() {
         />
         <button onClick={buscar}>Buscar</button>
       </div>
-      <section>
-        {resultado.map((item) => (
+      <section className="lista">
+        {resultado.map(item => 
           <div className="cartao-filme">
-            <div>
               <img src={item.Poster} alt="" />
+            <div>
               <h1>{item.Title}</h1>
               <h2>Lançado em {item.Year}</h2>
-              <p>Cód. imdb: {item.ImdbID}</p>
+              <p>Cód. imdb: {item.imdbID}</p>
             </div>
           </div>
-        ))}
+        )}
       </section>
       <Link to="/"> Voltar para home </Link>
     </div>
